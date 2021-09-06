@@ -242,6 +242,8 @@ img {
   background-color: #188ce8;
 }
 
+/* -----Модальное окно------ */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -275,7 +277,7 @@ img {
 }
 
 .modal {
-  position: relative;
+  padding: 40px;
 }
 
 .modal-close {
@@ -292,6 +294,72 @@ img {
   cursor: pointer;
 }
 
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-input:focus-within {
+  outline: transparent;
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus-within + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
+.textarea {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.textarea:focus-within {
+  outline: transparent;
+  border-color: var(--accent-color);
+}
+
+.checkbox {
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: yellow;
+}
 /* ------------------------------Section-------------------- */
 
 .section .section-title {
@@ -697,7 +765,6 @@ img {
 .subscribe-section {
   padding-top: 12px;
   padding-left: 93px;
-  vertical-align: middle;
 }
 
 .form-button {
@@ -707,7 +774,7 @@ img {
   color: #ffffff;
 
   min-width: 200px;
-  border: 1px solid transparent;
+  border: unset;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -719,19 +786,18 @@ img {
   cursor: pointer;
 }
 
-.form-field {
+.field-subscribe {
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .input-subscribe {
-  width: 358px;
-  height: 50px;
-  box-sizing: border-box;
+  width: 340px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: rgba(47, 48, 58, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -750,16 +816,8 @@ img {
   height: 24px;
   background-image: url(../images/svg-images/icon-send.svg);
   vertical-align: middle;
+  margin-left: 10px;
 }
-
-/* .form-button {
-  position: relative;
-}
-
-.icon-form {
-  position: absolute;
-  left: 10px;
-} */
 
 /* -----------------------------Portfolio-------------------------- */
 
