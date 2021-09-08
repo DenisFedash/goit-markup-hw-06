@@ -405,6 +405,7 @@ img {
 .subscribe-check {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .button-check {
@@ -413,7 +414,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87em;
-  margin-bottom: 40px;
 
   letter-spacing: 0.06em;
   color: #ffffff;
