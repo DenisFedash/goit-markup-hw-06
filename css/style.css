@@ -360,6 +360,7 @@ img {
 }
 
 .textarea:focus-within {
+  border-color: transparent;
   outline: transparent;
   border-color: var(--accent-color);
 }
