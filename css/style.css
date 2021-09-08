@@ -255,17 +255,6 @@ img {
   transition: 250ms var(--cubic-bezier);
 }
 
-.modal-title {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15em;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-text-color);
-}
-
 .modal {
   width: 528px;
   height: 581px;
@@ -328,6 +317,15 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 12px;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15em;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
 }
 
 .modal-input {
